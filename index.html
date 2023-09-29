@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aurora Borealis</title>
+    <style>
+      body {
+        background: radial-gradient(
+          circle at 10% 20%,
+          rgb(161, 255, 206) 0%,
+          rgb(250, 255, 209) 90%
+        );
+      }
+      h1 {
+        text-align: center;
+        color: #017340;
+        border: 2px solid #017340;
+        padding: 15px;
+        border-radius: 5px;
+      }
+      h2 {
+        text-align: center;
+        font-size: 19px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 17px;
+        margin: 20px 0 10px;
+      }
+      img {
+        display: block;
+        margin: 10px auto;
+        max-width: 100%;
+        border-radius: 20px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #017340;
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: 1px solid #017340;
+        border-radius: 8px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        background: #16be6c;
+        color: white;
+      }
+      .page {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 10px 10px;
+      }
+      .learn-more {
+        color: #017340;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      .author {
+        text-align: center;
+      }
+      .Alona {
+        text-decoration: none;
+        color: #017340;
+      }
+      .Alona:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <h1>Northern Lights or Aurora Borealis</h1>
+      <h2>What are the northern lights?</h2>
+      <hr />
+      <p>
+        The <strong>northern lights,</strong> or
+        <strong>aurora borealis,</strong> are a spectacular, colourful display
+        of light commonly seen in the night sky in the northern hemisphere.
+        Auroras in the southern hemisphere are known as the
+        <strong>southern lights,</strong> or <strong>aurora australis.</strong>
+        <br />
+        Both the northern lights and the southern lights are
+        <em>polar lights,</em> or <em>aurora polaris,</em> because they occur
+        near Earth's magnetic poles.
+      </p>
+      <a
+        href="https://www.asc-csa.gc.ca/eng/astronomy/northern-lights/what-are-northern-lights.asp"
+        target="_blank"
+        class="learn-more"
+      >
+        Learn more
+      </a>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/180/original/533936.jpg?1679035868"
+        alt="Aurora Borealis"
+      />
+
+      <button>Explore further</button>
+      <p class="author">
+        This page was built by
+        <a
+          href="https://www.instagram.com/alyo_naaa/"
+          target="_blank"
+          class="Alona"
+        >
+          Alona Koriachenko
+        </a>
+      </p>
+    </div>
+    <script>
+      function explore() {
+        let name = prompt("What is your name?");
+        let age = prompt("How old are you?");
+        let emoji = prompt("What is your favorite emoji?");
+        if (age >= 18) {
+          alert(
+            "Pack your bags, " +
+              name +
+              ", it's time to explore the world! " +
+              emoji
+          );
+        } else {
+          alert(
+            "Take your parents and pack your bags, " +
+              name +
+              ", t's time to explore the world! " +
+              emoji
+          );
+        }
+      }
+      let exploreButton = document.querySelector("button");
+      exploreButton.addEventListener("click", explore);
+    </script>
+  </body>
+</html>
